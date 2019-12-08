@@ -16,7 +16,8 @@ return [
     'defaultRoute' => 'site/statisticuser',
     'components' => [
         'request' => [
-            'enableCsrfValidation' => false
+            'csrfParam' => '_csrf-backend',
+            
         ],
         'user' => [
             'identityClass' => 'common\models\User',
