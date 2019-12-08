@@ -58,6 +58,13 @@ class SiteController extends Controller
         ];
     }
 
+    public function beforeAction($action)
+    {
+        $this->enableCsrfValidation = false;
+
+        return parent :: beforeAction($action);
+    }
+
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
