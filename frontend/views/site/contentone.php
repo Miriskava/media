@@ -14,7 +14,7 @@ $this->title = $model->name;
     {
     ?>
         <audio controls>
-            <source src="<?=\Yii::getAlias('@backend').'/web/resource/'.$model->way?>" type="audio/mpeg">
+            <source src="https://vipvolpi.host/backend/web/resource/<?=$model->way?>" type="audio/mpeg">
         </audio>
     <?php }
     if($model->type=='Video')
