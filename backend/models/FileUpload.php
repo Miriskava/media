@@ -27,7 +27,7 @@ class FileUpload extends Model
     public function uploadFile(UploadedFile $f){
         $this->file=$f;
         $filename=md5($f->baseName).'.'.$f->extension;
-        $f->saveAs(\Yii::getAlias('@backend').'/web/resource/'.$filename);
+        $f->saveAs('https://vipvolpi.host/admin/resource/'.$filename);
         return $filename;
     }
 }
