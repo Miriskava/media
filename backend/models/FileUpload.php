@@ -27,7 +27,7 @@ class FileUpload extends Model
     public function uploadFile(UploadedFile $f){
         $this->file=$f;
         $filename=md5($f->baseName).'.'.$f->extension;
-        $f->saveAs('vipvolpi.host/admin/resource/'.$filename);
+        $f->saveAs('/var/www/vipvolpi/backend/resource/'.$filename);
         return $filename;
     }
 }
