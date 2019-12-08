@@ -20,7 +20,7 @@ $this->title = $model->name;
     if($model->type=='Video')
     {?>
     <video width="400" height="300" controls="controls" >
-        <source src="resource/<?=$model->way?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="<?=\Yii::getAlias('@backend').'/web/resource/'.$model->way?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
     <?php }?>
     <div><?=Html::a('Вернуться',['content'],['class'=>'btn btn-info'])?></div>
