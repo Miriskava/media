@@ -16,7 +16,6 @@ return [
     'defaultRoute' => 'site/statisticuser',
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-backend',
             'enableCsrfValidation' => false,
         ],
         'user' => [
