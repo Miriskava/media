@@ -129,12 +129,12 @@ class SiteController extends Controller
 
     public function actionContentdelete($id)
     {
-        $file=$this->findContent($id);var_dump('sss');
+        $file=$this->findContent($id);return \Yii::getAlias('@backend').'/web/resource/'.$file->way;
        /* if(file_exists(\Yii::getAlias('@backend/web').'resource/'.$file->way))
         {unlink(\Yii::getAlias('@backend/web').'resource/'.$file->way);
             $file->delete();}*/
 
-        return $this->redirect(['content']);
+       // return $this->redirect(['content']);
     }
 
     protected function findContent($id)
