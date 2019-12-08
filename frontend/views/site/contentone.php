@@ -14,7 +14,7 @@ $this->title = $model->name;
     {
     ?>
         <audio controls>
-            <source src="https://vipvolpi.host/resource/<?=$model->way?>" type="audio/mpeg">
+            <source src="vipvolpi.host/resource/<?=$model->way?>" type="audio/mpeg">
         </audio>
     <?php }
     if($model->type=='Video')
